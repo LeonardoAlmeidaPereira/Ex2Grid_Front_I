@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 7fr 1fr;
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-areas: 
+    "al header header"
+    "al main ar"
+    "footer footer ar";
+}
+
+div >  #aside-l{
+    background-color:  blue ;
+    grid-area: al;
+}
+
+header{
+    background-color: yellow;
+    grid-area: header;
+}
+
+main{
+    background-color: green;
+    grid-area: main;
+}
+
+div > #aside-r{
+    background-color: blue;
+    grid-area: ar;
+}
+
+footer{
+    background-color: red;
+    grid-area: footer;
+}
